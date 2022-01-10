@@ -1,0 +1,17 @@
+.MuiDataGrid-row.odd-row {
+    background-color: lightgray;
+}
+
+.MuiDataGrid-row.even-row {
+    background-color: gray;
+}
+
+.third-section .MuiPaper-root {
+    padding: 0px 24px;
+}
+
+
+
+.item-1 {
+    margin-left: -10px;
+}
