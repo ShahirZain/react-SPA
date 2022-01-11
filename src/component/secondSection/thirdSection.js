@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-
+import { AiOutlinePlusSquare } from "react-icons/ai";
 import { HRIS, management, delivery, values, blanks } from "./mockDate";
 import Button from "@mui/material/Button";
 export default function SecondSection() {
   const [selected, setSelected] = useState([]);
 
   const plus = () => {
-    return <span style={{ fontSize: "20px" }}> &#x229E; </span>;
+    return <span style={{ fontSize: "20px" }}>{<AiOutlinePlusSquare />}</span>;
   };
 
   const greenTick = () => {
@@ -36,6 +36,7 @@ export default function SecondSection() {
             justifyContent: "flex-end",
             marginBottom: "20px",
             marginLeft: "20px",
+            visibility: !Object.keys(item).length && "hidden",
           }}
         >
           <h3> {item.heading} </h3>
@@ -65,7 +66,7 @@ export default function SecondSection() {
                 display: "flex",
                 flexDirection: "column",
                 borderRadius: "15px",
-                boxShadow: "0px 5px #888888",
+                boxShadow: "0px 5px  5px #888888",
               }}
             >
               <img
@@ -98,7 +99,6 @@ export default function SecondSection() {
         paddingLeft: "100px",
         marginTop: "20px",
         display: "block",
-        width: "fit-content",
       }}
     >
       <div
@@ -107,6 +107,7 @@ export default function SecondSection() {
           backgroundColor: "white",
           display: "flex",
           borderRadius: "10px",
+          justifyContent: "space-around",
         }}
       >
         {renderCard(HRIS)}
@@ -117,6 +118,7 @@ export default function SecondSection() {
           backgroundColor: "white",
           display: "flex",
           borderRadius: "10px",
+          justifyContent: "space-around",
         }}
       >
         {" "}
@@ -128,6 +130,7 @@ export default function SecondSection() {
           backgroundColor: "white",
           display: "flex",
           borderRadius: "10px",
+          justifyContent: "space-around",
         }}
       >
         {" "}
@@ -139,6 +142,7 @@ export default function SecondSection() {
           backgroundColor: "white",
           display: "flex",
           borderRadius: "10px",
+          justifyContent: "space-around",
         }}
       >
         {" "}
@@ -150,6 +154,7 @@ export default function SecondSection() {
           backgroundColor: "white",
           display: "flex",
           borderRadius: "10px",
+          justifyContent: "space-around",
         }}
       >
         {" "}
@@ -165,6 +170,7 @@ export default function SecondSection() {
           height: "40px",
           margin: 0,
           marginTop: "25px",
+          justifyContent: "space-around",
         }}
         variant="contained"
       >

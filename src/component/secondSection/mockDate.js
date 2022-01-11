@@ -151,4 +151,8 @@ export const blanks = [
     img: Logo,
     label: "bla",
   },
+  {},
+  {},
+  {},
+  {},
 ];
